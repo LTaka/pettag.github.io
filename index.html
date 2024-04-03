@@ -1,16 +1,17 @@
 import React from 'react';
-import './ProfileCard.css'; // Importando o CSS
+import { Box, Image, Text, Flex } from '@shadcn/ui';
 
-const ProfileCard = () => {
+const HomePage = () => {
   return (
-    <div className="profile-card">
-      <img src="image-url-aqui" alt="Profile" className="profile-image" />
-      <div className="profile-info">
-        <h2>Nome Aqui</h2>
-        <p>Telefone Aqui</p>
-      </div>
-    </div>
+    <Flex align="center" justify="center" h="100vh" direction="column">
+      <Box boxSize="sm" mb="4">
+        <Image src="path/to/user/image.jpg" alt="User Image" borderRadius="full" />
+      </Box>
+      <Text fontSize="xl" mb="2">Nome do Usuário</Text>
+      <Text fontSize="md" mb="1">Sexo: Masculino/Feminino</Text>
+      <Text fontSize="md">Telefone: (xx) xxxx-xxxx</Text>
+    </Flex>
   );
 };
 
-export default ProfileCard;
+export default HomePage;

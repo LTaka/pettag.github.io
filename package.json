@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
+  },
+  "homepage": "https://ltaka.github.io/pettag.github.io/",
+  "dependencies": {
+    "@shadcn/ui": "^0.0.4"
+  }
+}
